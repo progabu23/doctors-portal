@@ -1,0 +1,14 @@
+.header-bg {
+    height:760px;
+    position:relative;
+}
+.header-bg::before {
+    height:720px;  
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 32%;
+    right: 0;
+    background-color: #3A4256;
+    z-index: -50;
+}
