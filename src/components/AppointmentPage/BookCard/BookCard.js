@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AppointmentForm from '../AppointmentForm/AppointmentForm';
 
 
 const BookCard = ({booking, date}) => {
@@ -18,6 +19,7 @@ const BookCard = ({booking, date}) => {
                     <h6>{booking.visitingHour}</h6>
                     <p>{booking.totalSpace} SPACES AVAILABLE</p>
                     <button onClick={openModal} style={{backgroundColor: '#1cc7c1', color: '#ffffff'}} className="btn text-uppercase">Book Appointment</button>
+                    <AppointmentForm modalIsOpen={modalIsOpen} appointmentOn={booking.subject} closeModal={closeModal} date={date}></AppointmentForm>
                 </div>
             </div>
         </div>
